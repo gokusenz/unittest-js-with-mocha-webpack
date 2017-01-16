@@ -17,7 +17,8 @@ var config = {
 
   plugins: [
     new WebpackShellPlugin({
-      onBuildExit: "mocha --colors --require spec-helper.js testBundle.js"
+      onBuildExit: "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --colors tests"
+      // onBuildExit: "mocha --colors --require spec-helper.js testBundle.js"
     })
   ]
 };
