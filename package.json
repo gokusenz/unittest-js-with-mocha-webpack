@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "Setup to run mocha with webpack",
   "scripts": {
-    "test": "webpack -w --progress --colors --config webpack-test.config.js"
+    "test": "webpack -w --progress --colors --config webpack-test.config.js",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha tests/rectangle-test.js"
   },
   "devDependencies": {
+    "babel": "^6.5.2",
     "chai": "^3.5.0",
+    "istanbul": "0.4.5",
     "mocha": "^3.2.0",
     "webpack": "^1.14.0",
     "webpack-node-externals": "^1.5.4",

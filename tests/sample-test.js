@@ -5,3 +5,9 @@ describe('Sample tests', function() {
     expect(true).to.be.true;
   });
 });
+
+describe('Two Sample tests', function() {
+  it('Should pass', function () {
+    expect(true).to.be.true;
+  });
+});
